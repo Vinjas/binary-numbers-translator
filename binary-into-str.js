@@ -1,9 +1,6 @@
 function binaryAgent(strng) {
     strng = document.getElementById("codigoBinario").value
 
-    console.log(strng)
-    console.log(typeof strng)
-
     var newStr
     var newArr = []
     var arrDiv = []
@@ -48,11 +45,9 @@ function binaryAgent(strng) {
       }
       
     } else {
-        outputLetras.innerHTML = "Introduce números binarios válidos"
+        outputLetras.innerHTML = "Introduce a valid Binary Numbers Sequence"
         //return "Introduce números binarios válidos"
     }
     outputLetras.innerHTML = letras
     //return letras
   }
-  
-  console.log(binaryAgent("01101"))
