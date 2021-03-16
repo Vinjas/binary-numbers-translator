@@ -2,6 +2,7 @@ function binaryAgent(str) {
     var newStr
     var newArr = []
     var arrDiv = []
+    var arrSum = []
   
     if (str.includes(" ")) {
       newStr = str.replace(/ +/g, "")   
@@ -29,13 +30,19 @@ function binaryAgent(str) {
       }
   
       // Saco el valor de cada 1 o 0
+      
       for(let i = 0; i < arrDiv.length; i++) {
-        arrDiv[i].map(function(dig) {
-          return dig + 4
-        })
+        var exponente = 7
+        var temp = 0
+        for(let l = 0; l < arrDiv[i].length; l++) {
+          if(arrDiv[i][l] === 1) {
+            temp += arrDiv[i][l] = Math.pow(2, exponente)
+          }     
+          exponente--
+        }
+        arrSum.push(temp)
       }
       
-     
   
     } else {
       return "Introduce números binarios válidos"
@@ -43,5 +50,5 @@ function binaryAgent(str) {
     
   
   
-    return arrDiv
+    return arrSum
   }
