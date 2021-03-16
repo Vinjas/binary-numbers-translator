@@ -1,14 +1,19 @@
-function binaryAgent(str) {
+function binaryAgent(strng) {
+    strng = document.getElementById("codigoBinario").value
+
+    console.log(strng)
+    console.log(typeof strng)
+
     var newStr
     var newArr = []
     var arrDiv = []
     var arrSum = []
     var letras = ""
   
-    if (str.includes(" ")) {
-      newStr = str.replace(/ +/g, "")   
+    if (strng.includes(" ")) {
+      newStr = strng.replace(/ +/g, "")   
     } else {
-      newStr = str
+      newStr = strng
     }
   
     if(/^[0-1]+$/gi.test(newStr) === true) {
@@ -43,8 +48,11 @@ function binaryAgent(str) {
       }
       
     } else {
-      return "Introduce números binarios válidos"
+        outputLetras.innerHTML = "Introduce números binarios válidos"
+        //return "Introduce números binarios válidos"
     }
-    return letras
+    outputLetras.innerHTML = letras
+    //return letras
   }
   
+  console.log(binaryAgent("01101"))
