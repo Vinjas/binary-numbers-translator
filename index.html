@@ -16,13 +16,21 @@
     <br>
     <p>Just introduce your Binary Number Sequence, with or without spaces, click the button and let the Magic do the work</p>
     <br>
-    <form>
-        <input type="text" id="codigoBinario" name="codigoBinario" placeholder="Paste your Binary Numbers here">
-        <br>
-        <input type="button" onclick="binaryAgent()" value="Translate">
-    </form>
-    <br>
-    <div id="outputLetras"></div>
 
+    <div>
+        <form>
+            <label>Binary Input</label>
+            <br>
+            <textarea id="codigoBinario" name="codigoBinario" placeholder="Paste your Binary Numbers here"></textarea>
+            <br>
+            <input type="button" onclick="binaryAgent()" value="Translate">
+        </form>
+        <br>
+        
+        <form>
+            <label>Translated Output</label>
+            <div class="column2" id="outputLetras"></div>
+        </form>
+    </div>
 </body>
 </html>

@@ -1,8 +1,38 @@
+/*.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.column1 {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+.buttonTranslate {
+
+}*/
+.column2 {
+    width: 80%;
+    height: 200px;
+    background-color: white;
+    color: #333333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #706c61;
+    border-width: 2px;
+    margin: auto;
+} 
+
 body {
     font-family: 'JetBrains Mono', Arial, sans-serif;
     text-align: center;
     background-color: #333333;
     color: white;
+}
+label {
+    font-weight: 800;
 }
 input[type=button] {
     font-family: 'Roboto', Arial, sans-serif;
@@ -19,16 +49,17 @@ input[type=button]:hover {
     background-color: white;
     cursor: pointer;
 }
-input[type=text] {
+textarea {
+    width: 80%;
+    height: 200px;
     font-family: 'Roboto', Arial, sans-serif;
-    width: 50%;
-    height: 30%;
     padding: 10px 15px;
     border-radius: 5px;
     border-style: solid;
     border-color: #706c61;
     border-width: 2px;
     resize: none;
+    margin: auto;
 }
 input[type=text]:focus {
     background-color: #fafafa;
@@ -36,3 +67,8 @@ input[type=text]:focus {
 #outputLetras {
     font-size: 24px;    
 }
+/*@media screen and (max-width: 600px) {
+    textarea {
+        width: 90%;
+    }
+}*/
