@@ -1,7 +1,38 @@
 body {
+    font-family: 'JetBrains Mono', Arial, sans-serif;
     text-align: center;
+    background-color: #333333;
+    color: white;
 }
-
+input[type=button] {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 800;
+    background-color: #e1f4f3;
+    color: #333333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+input[type=button]:hover {
+    background-color: white;
+    cursor: pointer;
+}
+input[type=text] {
+    font-family: 'Roboto', Arial, sans-serif;
+    width: 50%;
+    height: 30%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #706c61;
+    border-width: 2px;
+    resize: none;
+}
+input[type=text]:focus {
+    background-color: #fafafa;
+}
 #outputLetras {
     font-size: 24px;    
 }
